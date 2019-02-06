@@ -1,0 +1,9 @@
+{
+  "name": "dev-fast-data",
+  "commands": {
+    "status": "make status",
+    "start": "make start",
+    "stop": "make stop"
+  },
+  "stack": []
+}
