@@ -1,4 +1,4 @@
-# dev-fast-data
+# dev-fast-data-dev
 Manages docker image for local development.
 
 ### Commands
