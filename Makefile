@@ -14,6 +14,8 @@ start:
 		-p 9581-9585:9581-9585 \
 		-p 9092:9092 \
 		-e RUNNING_SAMPLEDATA=1 \
+		-e KAFKA_AUTO_CREATE_TOPICS_ENABLE='true' \
+		-e ADV_HOST=docker.for.mac.localhost \
 	${IMAGE}
 
 stop:
