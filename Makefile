@@ -33,11 +33,7 @@ check-running:
 	fi \
 
 status:
-	@if [ -z "${CONTAINER_ID}" ]; then\
-		echo fail; \
-	else \
-		echo ok; \
-	fi \
+	@curl -f -s 0.0.0.0:8082 > /dev/null && echo ok || echo fail
 
 logs:
 	docker logs -f ${CONTAINER_ID}
